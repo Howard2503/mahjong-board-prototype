@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>麻将棋盘游戏</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- 棋盘 -->
+    <div class="board">
+      <!-- 10x10 棋盘，每个格子 -->
+      <div class="cell" data-row="0" data-col="0"></div>
+      <div class="cell" data-row="0" data-col="1"></div>
+      <div class="cell" data-row="0" data-col="2"></div>
+      <div class="cell" data-row="0" data-col="3"></div>
+      <div class="cell" data-row="0" data-col="4"></div>
+      <div class="cell" data-row="0" data-col="5"></div>
+      <div class="cell" data-row="0" data-col="6"></div>
+      <div class="cell" data-row="0" data-col="7"></div>
+      <div class="cell" data-row="0" data-col="8"></div>
+      <div class="cell" data-row="0" data-col="9"></div>
+      <div class="cell" data-row="1" data-col="0"></div>
+      <div class="cell" data-row="1" data-col="1"></div>
+      <div class="cell" data-row="1" data-col="2"></div>
+      <div class="cell" data-row="1" data-col="3"></div>
+      <div class="cell" data-row="1" data-col="4"></div>
+      <div class="cell" data-row="1" data-col="5"></div>
+      <div class="cell" data-row="1" data-col="6"></div>
+      <div class="cell" data-row="1" data-col="7"></div>
+      <div class="cell" data-row="1" data-col="8"></div>
+      <div class="cell" data-row="1" data-col="9"></div>
+      <div class="cell" data-row="2" data-col="0"></div>
+      <div class="cell" data-row="2" data-col="1"></div>
+      <div class="cell" data-row="2" data-col="2"></div>
+      <div class="cell" data-row="2" data-col="3"></div>
+      <div class="cell" data-row="2" data-col="4"></div>
+      <div class="cell" data-row="2" data-col="5"></div>
+      <div class="cell" data-row="2" data-col="6"></div>
+      <div class="cell" data-row="2" data-col="7"></div>
+      <div class="cell" data-row="2" data-col="8"></div>
+      <div class="cell" data-row="2" data-col="9"></div>
+      <div class="cell" data-row="3" data-col="0"></div>
+      <div class="cell" data-row="3" data-col="1"></div>
+      <div class="cell" data-row="3" data-col="2"></div>
+      <div class="cell" data-row="3" data-col="3"></div>
+      <div class="cell" data-row="3" data-col="4"></div>
+      <div class="cell" data-row="3" data-col="5"></div>
+      <div class="cell" data-row="3" data-col="6"></div>
+      <div class="cell" data-row="3" data-col="7"></div>
+      <div class="cell" data-row="3" data-col="8"></div>
+      <div class="cell" data-row="3" data-col="9"></div>
+      <div class="cell" data-row="4" data-col="0"></div>
+      <div class="cell" data-row="4" data-col="1"></div>
+      <div class="cell" data-row="4" data-col="2"></div>
+      <div class="cell" data-row="4" data-col="3"></div>
+      <div class="cell" data-row="4" data-col="4"></div>
+      <div class="cell" data-row="4" data-col="5"></div>
+      <div class="cell" data-row="4" data-col="6"></div>
+      <div class="cell" data-row="4" data-col="7"></div>
+      <div class="cell" data-row="4" data-col="8"></div>
+      <div class="cell" data-row="4" data-col="9"></div>
+      <div class="cell" data-row="5" data-col="0"></div>
+      <div class="cell" data-row="5" data-col="1"></div>
+      <div class="cell" data-row="5" data-col="2"></div>
+      <div class="cell" data-row="5" data-col="3"></div>
+      <div class="cell" data-row="5" data-col="4"></div>
+      <div class="cell" data-row="5" data-col="5"></div>
+      <div class="cell" data-row="5" data-col="6"></div>
+      <div class="cell" data-row="5" data-col="7"></div>
+      <div class="cell" data-row="5" data-col="8"></div>
+      <div class="cell" data-row="5" data-col="9"></div>
+      <div class="cell" data-row="6" data-col="0"></div>
+      <div class="cell" data-row="6" data-col="1"></div>
+      <div class="cell" data-row="6" data-col="2"></div>
+      <div class="cell" data-row="6" data-col="3"></div>
+      <div class="cell" data-row="6" data-col="4"></div>
+      <div class="cell" data-row="6" data-col="5"></div>
+      <div class="cell" data-row="6" data-col="6"></div>
+      <div class="cell" data-row="6" data-col="7"></div>
+      <div class="cell" data-row="6" data-col="8"></div>
+      <div class="cell" data-row="6" data-col="9"></div>
+      <div class="cell" data-row="7" data-col="0"></div>
+      <div class="cell" data-row="7" data-col="1"></div>
+      <div class="cell" data-row="7" data-col="2"></div>
+      <div class="cell" data-row="7" data-col="3"></div>
+      <div class="cell" data-row="7" data-col="4"></div>
+      <div class="cell" data-row="7" data-col="5"></div>
+      <div class="cell" data-row="7" data-col="6"></div>
+      <div class="cell" data-row="7" data-col="7"></div>
+      <div class="cell" data-row="7" data-col="8"></div>
+      <div class="cell" data-row="7" data-col="9"></div>
+      <div class="cell" data-row="8" data-col="0"></div>
+      <div class="cell" data-row="8" data-col="1"></div>
+      <div class="cell" data-row="8" data-col="2"></div>
+      <div class="cell" data-row="8" data-col="3"></div>
+      <div class="cell" data-row="8" data-col="4"></div>
+      <div class="cell" data-row="8" data-col="5"></div>
+      <div class="cell" data-row="8" data-col="6"></div>
+      <div class="cell" data-row="8" data-col="7"></div>
+      <div class="cell" data-row="8" data-col="8"></div>
+      <div class="cell" data-row="8" data-col="9"></div>
+      <div class="cell" data-row="9" data-col="0"></div>
+      <div class="cell" data-row="9" data-col="1"></div>
+      <div class="cell" data-row="9" data-col="2"></div>
+      <div class="cell" data-row="9" data-col="3"></div>
+      <div class="cell" data-row="9" data-col="4"></div>
+      <div class="cell" data-row="9" data-col="5"></div>
+      <div class="cell" data-row="9" data-col="6"></div>
+      <div class="cell" data-row="9" data-col="7"></div>
+      <div class="cell" data-row="9" data-col="8"></div>
+      <div class="cell" data-row="9" data-col="9"></div>
+      <!-- 继续生成更多格子，示例中省略 -->
+    </div>
+
+    <!-- 麻将牌堆 -->
+    <div class="tiles">
+      <!-- 麻将牌 -->
+      <div class="tile" draggable="true" data-tile="1">1筒</div>
+      <div class="tile" draggable="true" data-tile="2">2筒</div>
+      <div class="tile" draggable="true" data-tile="3">3筒</div>
+      <div class="tile" draggable="true" data-tile="4">4筒</div>
+      <div class="tile" draggable="true" data-tile="5">5筒</div>
+      <div class="tile" draggable="true" data-tile="6">6筒</div>
+      <div class="tile" draggable="true" data-tile="7">7筒</div>
+      <div class="tile" draggable="true" data-tile="8">8筒</div>
+      <div class="tile" draggable="true" data-tile="9">9筒</div>
+      <div class="tile" draggable="true" data-tile="11">1条</div>
+      <div class="tile" draggable="true" data-tile="12">2条</div>
+      <div class="tile" draggable="true" data-tile="13">3条</div>
+      <div class="tile" draggable="true" data-tile="14">4条</div>
+      <div class="tile" draggable="true" data-tile="15">5条</div>
+      <div class="tile" draggable="true" data-tile="16">6条</div>
+      <div class="tile" draggable="true" data-tile="17">7条</div>
+      <div class="tile" draggable="true" data-tile="18">8条</div>
+      <div class="tile" draggable="true" data-tile="19">9条</div>
+      <div class="tile" draggable="true" data-tile="21">1万</div>
+      <div class="tile" draggable="true" data-tile="22">2万</div>
+      <div class="tile" draggable="true" data-tile="23">3万</div>
+      <div class="tile" draggable="true" data-tile="24">4万</div>
+      <div class="tile" draggable="true" data-tile="25">5万</div>
+      <div class="tile" draggable="true" data-tile="26">6万</div>
+      <div class="tile" draggable="true" data-tile="27">7万</div>
+      <div class="tile" draggable="true" data-tile="28">8万</div>
+      <div class="tile" draggable="true" data-tile="29">9万</div>
+      <!-- 继续生成更多麻将牌 -->
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
